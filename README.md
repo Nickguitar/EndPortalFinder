@@ -5,6 +5,10 @@ A simple PHP script to find the End Portal in Minecraft using geometry
 When you throw an eye of ender, it flies over a straight line towards the end portal.
 So, if you throw an eye at coordinates (x, z), and then another eye at coordinates (x+300, z), you will have two straight lines. If you then triangulate them, they will meet together at the portal location.
 
+![Screenshot](https://i.imgur.com/Yc7hEq3.png)
+
+Here, (-800, 700) was the place of the first shot, and (-1000, 700) of the second. The lines meet together at (-1059, 1109), which is the location of the portal.
+
 ## How to use
 Press F3 and throw an eye of ender. It will stay in the air for a while until it falls. Without moving, center your crosshair exactly on it once it reaches it's peak position. Now, without moving your mouse, save your location (x1, z1) and the first facing degree (d1) as in the screenshot below.
 ![Screenshot](https://i.imgur.com/nN5usJF.png)
