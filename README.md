@@ -7,7 +7,7 @@ So, if you throw an eye at coordinates (x, z), and then another eye at coordinat
 
 ![Screenshot](https://i.imgur.com/zGjzwHs.png)
 
-Here, (-800, 700) was the place of the first shot (with angle 8.2º), and (-1000, 700) of the second (with angle 32.3º). The lines meet together at (-1059, 1109), which is the location of the portal.
+Here, (-800, 700) was the place of the first shot (with angle 32.3º), and (-1000, 700) of the second (with angle 8.2º). The lines meet together at (-1059, 1109), which is the location of the portal.
 
 ## How to use
 Press F3 and throw an eye of ender. It will stay in the air for a while until it falls. Without moving, center your crosshair exactly on it once it reaches it's peak position. Now, without moving your mouse, save your location (x1, z1) and the first facing degree (d1) as in the screenshot below.
@@ -31,7 +31,7 @@ d2 = 32.3
 ```
 Then, calling the function
 ```php
-echo find(-1000, 700, 8.2, -800, 700, 32.3);
+find(-1000, 700, 8.2, -800, 700, 32.3);
 ```
 It returns "X: -1059, Z: 1109.4", which is the approximate location of the end portal.
 
@@ -42,5 +42,5 @@ It returns "X: -1059, Z: 1109.4", which is the approximate location of the end p
 
 3. Since the eye have a chance of 80% of dropping as an item again, it is likely that you can find the portal with just one eye.
 
-4. On the other hand, if you have more than two eyes, you can do the proccess more than one time to get more accurate locations.
+4. On the other hand, if you have more than two eyes, you can do the proccess more than one time to get a more accurate location.
 (e.g., you get the x and z of the portal, then walks 200 blocks away, throw the eye of ender again and call the function. Then compare the results)
